@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>.:: Proyecto Final (presupuesto) - Marisol FC ::.</title>
 </head>
-<body>
+<body onload="cargarApp()">
     <div class="cabecero">
         <div class="presupuesto">
             <div class="presupuesto_titulo">
                 <h2>Presupuesto Disponible</h2>
-                <div class="presupuesto_valor">
-                    +2,000.00
+                <div id="presupuesto" class="presupuesto_valor">
+                    <!-- +2,000.00 -->
                 </div>
                 <div class="presupuesto_ingreso limpiarEstilos">
                     <div class="presupuesto_ingreso--texto">
                         Ingresos
                     </div>
                     <div class="derecha">
-                        <div class="presupuesto_ingreso--valor">
-                            +4,000.00
+                        <div id="ingresos" class="presupuesto_ingreso--valor">
+                            <!-- +4,000.00 --> 
                         </div>
                         <div class="presupuesto_ingreso--porcentaje">
                             &nbsp;
@@ -33,18 +33,18 @@
                         Egresos
                     </div>
                     <div class="derecha limpiarEstilos">
-                        <div class="presupuesto_egreso--valor">
-                            -1,900.00
+                        <div id="egresos" class="presupuesto_egreso--valor">
+                            <!-- -1,900.00 -->
                         </div>
-                        <div class="presupuesto_egreso--porcentaje">
-                            45%
+                        <div id="porcentaje" class="presupuesto_egreso--porcentaje">
+                            <!-- 45% -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <form id="forma" action="">
+    <form id="forma" action="" onsubmit="return false">
         <div class="agregar">
             <div class="agregar_conenedor">
                 <select name="" id="tipo" class="agregar_tipo">
@@ -52,8 +52,8 @@
                     <option value="egreso">-</option>
                 </select>
                 <input type="text" id="descripcion" class="agregar_descripcion" value="Agregar Descripción" />
-                <input type="number" class="agregar_valor" value="Valor" step="any" />
-                <button class="agregar_btn">
+                <input type="number" class="agregar_valor" id="valor" step="any" />
+                <button class="agregar_btn" onclick="agregarDato()">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </button>
             </div>
@@ -63,7 +63,7 @@
         <div class="ingreso">
             <h2 class="ingreso_titulo">Ingresos</h2>
             <div id="lista-ingresos">
-                <div class="elemento limpiarEstilos">
+                <!-- <div class="elemento limpiarEstilos">
                     <div class="elemento_descripcion">
                         Salario
                     </div>
@@ -89,13 +89,13 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="egreso">
             <h2 class="egreso_titulo">Egresos</h2>
             <div id="lista-egresos">
-                <div class="elemento limpiarEstilos">
+                <!-- <div class="elemento limpiarEstilos">
                     <div class="elemento_descripcion">Renta departament</div>
                     <div class="derecha limpiarEstilos">
                         <div class="elemento_valor">-900.00</div>
@@ -118,7 +118,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

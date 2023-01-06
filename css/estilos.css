@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#forma{
+    text-align: center;
+}
 .limpiarEstilos::after {
     content: "";
     display: table;

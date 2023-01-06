@@ -11,7 +11,7 @@ class Dato{
     get descripcion() {
         return _privado.get(this).propiedades['_descripcion'];
     }
-    // Establece/modifica el título de un libro:
+    // Establece/modifica la descripcion
     set descripcion(nuevaDescripcion) {
         return _privado.get(this).propiedades['_descripcion'] = nuevaDescripcion;
     }
@@ -19,7 +19,7 @@ class Dato{
     get valor() {
         return _privado.get(this).propiedades['_valor'];
     }
-    // Establece/modifica el título de un libro:
+    // Establece/modifica el valor
     set valor(nuevoValor) {
         return _privado.get(this).propiedades['_valor'] = nuevoValor;
     }
