@@ -51,7 +51,7 @@
                     <option value="ingreso" selected>&nbsp;&nbsp;+</option>
                     <option value="egreso">&nbsp;&nbsp;-</option>
                 </select>
-                <input type="text" id="descripcion" class="agregar_descripcion" value="Agregar Descripción" />
+                <input type="text" id="descripcion" class="agregar_descripcion" value="Agregar Descripción" onfocus="limpiarInput()"/>
                 <input type="number" class="agregar_valor" id="valor" step="any" />
                 <button class="agregar_btn" onclick="agregarDato()">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
