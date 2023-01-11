@@ -52,7 +52,7 @@ const cargarApp = () => {
 };
 
 const cargarIngresos = () => {
-    var ingresosHTML;
+    var ingresosHTML="";
     for(let ingreso of ingresos){
         ingresosHTML += crearIngresoHTML(ingreso);
     }
@@ -78,7 +78,7 @@ return ingresoHTML;
 }
 
 const cargarEgresos = () => {
-    let egresosHTML;
+    let egresosHTML="";
     for(let egreso of egresos){
         egresosHTML += crearEgresoHTML(egreso);
     }
